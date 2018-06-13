@@ -1,0 +1,2 @@
+for x in exp/{mono,tri1,tri2b,tri3b,tri4b,tri4b_dnn,tri4b_dnn_mpe}/decode_test_word* ; do [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh; done
+
